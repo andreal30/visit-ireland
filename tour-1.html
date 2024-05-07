@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Ireland | Dublin Delights</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header id="my-header" class="header">
+      <a href="index.html" class="logo"><img class="logo" src="./images/logo.svg" alt="logo" /></a>
+    
+      <nav id="my-nav">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="index.html#tips">Travel Tips</a></li>
+        <li><a href="#contact" class="btn btn-light">Save your spot</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <main id="tour-info">      
+    <div class="container">
+        <h1 class="main-title">Dublin Delights</h1>
+        <h3 class="mini-main-title">Immerse yourself in the heart of Ireland!</h3>
+
+
+        <h2 class="sub-title">General Description</h2>
+        <p><strong>Immerse yourself in the vibrant capital.</strong> Explore Dublin Castle, Trinity College (home to the Book of Kells), and the Guinness Storehouse. Enjoy a traditional pub dinner and an evening of Irish music.</p>
+
+
+        <div class="tour-info-box">
+          <!-- begin tour cards 1 -->
+      <div class="tours tour-1">
+        <div class="card-img"></div>
+        <div class="tour-container">
+          <div class="title-box">
+            <h3>Dublin Delights</h3>
+            <span class="days">3 days</span>
+          </div>
+          <div>
+            <div class="rating">
+              <img src="./images/star-filled.svg" alt="Star">
+              <img src="./images/star-filled.svg" alt="Star">
+              <img src="./images/star-filled.svg" alt="Star">
+              <img src="./images/star-filled.svg" alt="Star">
+              <img src="./images/star-filled.svg" alt="Star">
+              <span>4.7</span>
+            </div>
+            <span class="price">€499 per person</span>
+          </div>
+        </div>
+      </div>
+      <!-- end tour card -->
+
+            <div class="info-box">
+        <h2 class="sub-title">Itinerary</h2>
+        <ol class="tour-itinerary">
+            <li><strong>Day 1 - City Tour & Trinity College:</strong> Embark on a guided city tour, marveling at architectural wonders like Dublin Castle and St. Patrick's Cathedral. Immerse yourself in the intellectual heart of Ireland with a visit to Trinity College, home to the Book of Kells, a stunning illuminated manuscript.</li>
+            <li><strong>Day 2 - Guinness Storehouse & Kilmainham Gaol:</strong> Unleash your inner hophead at the Guinness Storehouse, learning the secrets of Ireland's iconic stout through interactive exhibits and tastings.  Travel back in time at Kilmainham Gaol, a former prison with a poignant history, and hear tales of Irish rebels and revolutionaries.</li>
+            <li><strong>Day 3 - St. Stephen's Green & Pub Night:</strong> Stroll through the lush oasis of St. Stephen's Green, a haven of peace in the bustling city center. Cap off your adventure with a traditional pub dinner, savoring hearty Irish fare and enjoying a lively evening of Irish music.  You might even catch a session of trad music, with fiddles, flutes, and bodhráns filling the air.</li>
+        </ol>
+        </div>
+        </div>
+
+        <h2 class="sub-title">Included Services</h2>
+        <ul class="tour-services">
+            <div>
+            <li><img src="./images/check.svg" alt="check"> Comfortable and centrally located accommodation</li>
+            <li><img src="./images/check.svg" alt="check"> Professional guide in English</li>
+            <li><img src="./images/check.svg" alt="check"> Entrance fees to Trinity College and the Book of Kells</li>
+            <li><img src="./images/check.svg" alt="check"> Admission and tour at the Guinness Storehouse</li>
+            </div>
+            <div>
+            <li><img src="./images/check.svg" alt="check"> Entrance and guided tour at Kilmainham Gaol</li>
+            <li><img src="./images/check.svg" alt="check"> Traditional pub dinner (one drink included)</li>
+            <li><img src="./images/check.svg" alt="check"> Local transportation passes (optional)</li>
+            </div>
+        </ul>
+
+    </div>
+    <!-- end container -->
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+          <!-- <h2 class="title">Save your place</h2> -->
+
+          <form action=".">
+            <div class="contact-group">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required/>
+              </div>
+
+              <div class="input-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required/>
+              </div>
+            </div>
+            <!-- end contact group -->
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required/>
+            </div>
+
+            <div class="input-group">
+              <label for="selecttour">Select tour</label>
+              <select name="selecttour" id="select-tour" required>
+                <option value="tour1" selected="selected">Dublin Delights</option>
+                <option value="tour2">Connemara & The Wild Atlantic Way</option>
+                <option value="tour3">
+                  Ring of Kerry & Killarney National Park
+                </option>
+                <option value="tour4">Northern Ireland Highlights</option>
+                <option value="tour5">Medieval Marvels & Whiskey Trails</option>
+                <option value="tour6">
+                  Puffin Palooza: West Coast Wildlife Adventure
+                </option>
+                <option value="tour7">
+                  Ancestral Footsteps: Genealogy Tour
+                </option>
+                <option value="tour8">Cycle the Emerald Isle</option>
+                <option value="tour9">
+                  Foodie Fantasy: A Taste of Ireland
+                </option>
+                <option value="tour10">
+                  Castles & Clans: A Historical Adventure
+                </option>
+                <option value="tour11">
+                  Hike & Explore: The Wild Wicklow Way
+                </option>
+                <option value="tour12">
+                  Family Fun: An Irish Adventure for All Ages
+                </option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-light">Save your spot</button>
+          </form>
+
+          <div class="contact-message">
+            <img src="./images/contact.png" alt="Contact image">
+            <h2>Discover the magic of Ireland!  Contact us for a personalized itinerary or to learn more about our exciting tours.</h2>
+          </div>
+          <!-- end contact-message -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+
+  </body>
+</html>
